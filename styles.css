@@ -136,6 +136,7 @@ header {
   top: 100%;
   left: 0;
   z-index: 1;
+
 }
 
 .top-menu-text li:hover .top-submenu-text {
@@ -190,6 +191,7 @@ header {
 .login {
   align-items: center;
   font-size: smaller;
+  max-width: 200px; 
 }
 
 .privatearea {
@@ -245,10 +247,12 @@ header {
   display: none;
   position: absolute;
   background-color: #1976d2;
+  /*background-color: transparent;*/
   padding: 10px;
   top: 100%;
   left: 0;
   z-index: 1;
+  font-size: smaller;
 }
 
 .menu li:hover .submenu {
@@ -265,6 +269,102 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
+
+/*Novo*/
+
+.sub-submenu{
+  display: none;
+  
+}
+
+.submenu li{
+  width: 150px;
+  align-items: center;
+}
+
+.sub-submenu a{
+  width: 150px;
+  align-items: center;
+}
+
+
+.submenu li:hover > .sub-submenu{
+  display: block;  
+}
+
+.sub-submenu {
+  display: none;
+  position: absolute;
+  background-color: #1976d2;
+  /*width:max-content;*/
+  padding-left: 25px;
+  top: 0;
+  left: 100%;
+  z-index: 2;
+  
+}
+
+.submenu li:hover > .sub-submenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(1px); /* Ajuste a distância horizontal conforme necessário */
+}
+
+.sub-submenu li {
+  display: block; /* Exibir os itens do sub-submenu em linha */
+  margin-right:5px; /* Ajuste o espaçamento entre os itens conforme necessário */
+}
+
+.sub-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.sub-sub-submenu{
+  display: none;
+}
+
+.sub-submenu li:hover > .sub-sub-submenu{
+  display: block;  
+}
+
+.sub-sub-submenu {
+  display: none;
+  position: absolute;
+  background-color: #1976d2;
+  /*width:max-content;*/
+  padding-left: 5px;
+  top: 0;
+  left: 150%;
+  z-index: 3;
+  
+}
+
+.sub-submenu li:hover > .sub-sub-submenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(1px); /* Ajuste a distância horizontal conforme necessário */
+}
+
+.sub-sub-submenu li {
+  display: block; /* Exibir os itens do sub-sub-submenu em linha */
+  margin-right: 10px; /* Ajuste o espaçamento entre os itens conforme necessário */
+
+}
+
+.sub-sub-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+
 
 .search-box {
   display: flex;
