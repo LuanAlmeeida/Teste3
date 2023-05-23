@@ -26,6 +26,18 @@ window.onscroll = function() {
         alert("Texto não encontrado.");
       }
     }
+   // Função Popup de Busca
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("searchPopup").style.display = "none";
+    });
+    
+    function openSearchPopup() {
+      document.getElementById("searchPopup").style.display = "block";
+    }
+    
+    function closeSearchPopup() {
+      document.getElementById("searchPopup").style.display = "none";
+    }
 
   // Função para alternar o modo de alto contraste
 function toggleContrast() {

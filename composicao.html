@@ -6,10 +6,21 @@
   <link rel="shortcut icon" href="./img/Favicon-CCHLA.png">
   <link rel="stylesheet" href="styles.css">
   <script src="./script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <link href="./fontawesome-free-6.0.0-beta2-web/fontawesome-free-6.0.0-beta2-web/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Liberation:400,700" rel="stylesheet">
 </head>
 <body>
+  <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+    <ul id="menu-barra-temp" style="list-style:none;">
+      <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+          <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+      </li>
+      <li>
+         <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+      </li>
+    </ul>
+  </div>
   <header>
     <nav class="top-menu">
       <div class="social-media">
@@ -183,9 +194,11 @@
       <li><a href="#">Contatos</a></li>
     </ul>
     <div class="search-box">
-      <input type="text" placeholder="Pesquisar...">
-      <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
-    </div>
+      <a href="#" onclick="performSearch()">
+        <i class="fas fa-search"></i>
+        <span class="search-text">Pesquisar</span>
+      </a>
+    </div> 
   </nav>
   
   <main>
@@ -741,6 +754,18 @@
     <p>©2023 CCHLA · Centro de Ciências Humanas, Letras e Artes · Todos os direitos reservados</p>
   </footer>
    <button id="scrollButton" onclick="scrollToTop()"></button>
+
+   <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
 
 </body>
 </html>

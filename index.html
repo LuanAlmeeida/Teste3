@@ -197,9 +197,19 @@
       <li><a href="./contatos.html">Contatos</a></li>
     </ul>
     <div class="search-box">
-      <input id="searchInput" type="text" placeholder="Pesquisar...">
-      <button id="searchButton"type="submit" onclick="performSearch()"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+      <a href="#" onclick="openSearchPopup()">
+        <i class="fas fa-search"></i>
+        <span class="search-text">Pesquisar</span>
+      </a>
     </div>
+    <div id="searchPopup" class="search-popup">
+      <span class="close-button" onclick="closeSearchPopup()">&times;</span>
+      <h2 id="title-search">O que você deseja pesquisar?</h2>
+      <div class="search-box">
+        <input id="search" type="text" placeholder="Digite sua busca aqui..."> 
+        <button id="search-button" class="search-button">Buscar</button>
+      </div>
+    </div>    
   </nav>
   
   <main>

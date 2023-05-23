@@ -158,7 +158,7 @@ header {
 .forgot-links {
   display: flex;
   justify-content: space-between;
-  gap: 9vh;
+  gap: 9px;
   margin-top: 10px;
   color:#ffffff;
 }
@@ -201,6 +201,92 @@ header {
     margin-top: 10px;
 }
 
+/* Estilos para o link de pesquisa */
+.search-box a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para o ícone de pesquisa */
+.search-box i {
+  color: white;
+  margin-right: 5px;
+}
+
+/* Estilos para o texto "Pesquisar" */
+.search-box .search-text {
+  color: white;
+}
+
+/* Estilos para a janela de busca */
+.search-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para o botão de fechar */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Estilos para o título da janela de busca */
+.search-popup h2 {
+  color: white;
+  text-align: center;
+}
+
+/* Estilos para a caixa de busca e botão */
+.search-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 350px;
+}
+
+
+/* Estilos para o campo de busca */
+.search-popup #search {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  justify-items: center;
+  margin-right: 10px;
+}
+
+/* Estilos para o botão de busca */
+.search-popup #search-button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para o hover do botão de busca */
+.search-popup #search-button:hover {
+  background-color: darkblue;
+}
 
 
 /* Estilos do menu principal */
@@ -362,25 +448,6 @@ header {
   text-decoration: none;
 }
 
-
-
-
-
-.search-box {
-  display: flex;
-  align-items: center;
-}
-
-.search-box input[type="text"] {
-  padding: 5px;
-}
-
-.search-box img {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  cursor: pointer;
-}
 
 /* Estilos do conteúdo principal */
 main {
