@@ -406,6 +406,15 @@ main section {
   font-size: smaller;
 }
 
+.titlec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+
 .news {
   display: flex;
   gap: 10px;
@@ -800,3 +809,20 @@ footer {
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    /*Tabela*/
+
+    table, th, td{
+    border: 3px solid lightblue;
+    border-collapse: collapse;
+    max-width: 90%;
+    margin: auto;
+    padding: 7px;
+    
+}
+
+th{
+    height: 45px;
+    background-color: darkblue;
+    color: white;
+}
