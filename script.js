@@ -15,3 +15,14 @@ window.onscroll = function() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    function performSearch() {
+      var searchInputValue = document.getElementById("searchInput").value.toLowerCase();
+      var pageContent = document.body.innerHTML.toLowerCase();
+
+      if (pageContent.includes(searchInputValue)) {
+        alert("Texto encontrado!");
+      } else {
+        alert("Texto não encontrado.");
+      }
+    }

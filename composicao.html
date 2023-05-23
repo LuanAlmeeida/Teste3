@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Portal do CCHLA</title>
+  <link rel="shortcut icon" href="./img/Favicon-CCHLA.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js"></script>
+  <link href="./fontawesome-free-6.0.0-beta2-web/fontawesome-free-6.0.0-beta2-web/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Liberation:400,700" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="top-menu">
+      <div class="social-media">
+        <a href="https://www.facebook.com/CCHLAUFRN"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/cchla.ufrn/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/cchla_ufrn"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/@tvazulao1887"><i class="fa-brands fa-youtube fa-2x"></i></a>
+      </div>
+      <div>
+        <ul class="top-menu-text">
+          <li><a href="https://www.ufrn.br/">UFRN <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="top-submenu-text">
+              <li><a href="https://ouvidoria.ufrn.br/">Ouvidoria</a></li>
+              <li><a href="https://sipac.ufrn.br/public/jsp/portal.jsf">SIPAC</a></li>
+              <li><a href="https://sigrh.ufrn.br/sigrh/public/home.jsf">SIGRH</a></li>
+              <li><a href="https://sigaa.ufrn.br/sigaa/public/home.jsf">SIGAA</a></li>
+              <li><a href="https://memo.ufrn.br/">MEMO</a></li>
+              <li><a href="https://polare.ufrn.br/polare/login">POLARE</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Semana de Humanidades <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="top-submenu-text">
+              <li><a href="#">ANAIS - 2018</a></li>
+              <li><a href="#">ANAIS - 2019</a></li>
+              <li><a href="#">ANAIS - 2020</a></li>
+              <li><a href="#">ANAIS - 2021</a></li>
+              <li><a href="#">ANAIS - 2022</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Portais <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="top-submenu-text">
+              <li><a href="https://www.gov.br/acessoainformacao/pt-br">Acesso à Informação</a></li>
+              <li><a href="https://portaldatransparencia.gov.br/">Portal da Transparência</a></li>
+              <li><a href="http://www4.planalto.gov.br/legislacao/">Portal da Legislação</a></li>
+              <li><a href="http://www.dominiopublico.gov.br/pesquisa/PesquisaPeriodicoForm.jsp">Portal do Domínio Público</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.gov.br/capes/pt-br">CAPES</a></li>
+          <li><a href="https://repositorio.ufrn.br/">Repositório Institucional</a></li>
+          <li><a href="https://lattes.cnpq.br/">Lattes</a></li>
+           <li><a href="#">Área Privativa <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="top-submenu-text">
+              <li>
+                <ul>
+                  <li>
+                    <form class="login" action="#" method="get">
+                      <label class="privatearea" for="username">Usuário:</label>
+                      <br>
+                      <input class="privatearea" type="text" id="username" name="username" placeholder="Usuário">
+                      <br>
+                      <br>
+                      <label class="privatearea" for="password">Senha:</label>
+                      <br>
+                      <input class="privatearea" type="password" id="password" name="password" placeholder="Senha">
+                      <br>
+                      <div class="forgot-links">
+                        <a href="#">Esqueci Usuário</a>
+                        <button id="buttonform" type="submit">Entrar</button>
+                      </div>                      
+                    </form>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+  
+  <nav class="main-menu">
+    <div class="logo">
+      <a href="./index.html">
+      <img src="./img/Logo - CCHLA.png" alt="CCHLA">
+      </a>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="#">Institucional</a>
+        <ul class="submenu">
+          <li><a href="#">Administração</a></li>
+          <li>
+            <a href="#">CONSEC <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="sub-submenu">
+                  <li><a href="#">Composição</a></li>
+                  <li><a href="#">Resoluções</a></li>
+                  <li><a href="#">Pautas e Atas</a></li>
+                  <li><a href="#">Representantes</a></li>
+                </ul>
+          </li>
+          <li>
+            <a href="#">Normas <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="sub-submenu">
+                  <li><a href="#">Regimento Interno</a></li>
+                  <li><a href="#">Prestação de Contas</a></li>
+                  <li><a href="#">Plano Quadrienal</a></li>
+                  <li><a href="#">Biblioteca</a></li>
+                  <li><a href="#">Centros Acadêmicos</a></li>
+                  <li><a href="#">Fixação de Placas</a></li>
+                </ul>    
+          </li>
+          <li>
+            <a href="#">Sobre o CCHLA <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="sub-submenu">
+                  <li><a href="#">Histórico</a></li>
+                  <li><a href="#">Organograma</a></li>
+                  <li><a href="#">Localização</a></li>
+                </ul>
+          </li>
+          <li>
+            <a href="#">Unidades <i class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sub-submenu">
+                <li><a href="#">Departamentos</a></li>
+                <li>
+                  <a href="#"> Unidades Acadêmicas Especializadas <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="sub-sub-submenu">
+                      <li><a href="#">Instituto Humanitas</a></li>
+                      <li><a href="#">Instituto de Políticas Públicas</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="#">Unidades Suplementares <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="sub-sub-submenu">
+                      <li><a href="#">Instituto Ágora</a></li>
+                      <li><a href="#">Serviço de Psicologia Aplicada - SEPA</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Ensino</a>
+        <ul class="submenu">
+          <li><a href="#">Graduação</a></li>
+          <li><a href="#">Pós-Graduação</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Pesquisa</a>
+        <ul class="submenu">
+          <li><a href="#">Grupos de Pesquisa</a></li>
+          <li><a href="#">Laboratórios</a></li>
+          <li><a href="#">Núcleos Interdisciplinares</a></li>
+          <li><a href="#">Projetos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Extensão</a>
+        <ul class="submenu">
+          <li><a href="#">Ações de Extensão</a></li>
+          <li><a href="#">Cursos e Eventos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Publicações</a>
+        <ul class="submenu">
+          <li><a href="#">Livros</a></li>
+          <li><a href="#">Revistas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Sistema de Reservas</a>
+        <ul class="submenu">
+          <li><a href="#">Auditórios do CCHLA</a></li>
+          <li><a href="#">Espaços Físicos do Setor de Aulas II</a></li>
+          <li><a href="#">Veículos do CCHLA</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contatos</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar...">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+    </div>
+  </nav>
+  
+  <main>
+    <section class="banner">
+      <img src="./img/barrasite2016.png" alt="Banner">
+    </section>
+        <div class="titlec">
+            <img class="dot" src="./img/Favicon-CCHLA.png" alt="">
+            <h2>Composição do CONSEC</h2>
+        </div>
+        <br>
+        <table>
+                <tr>
+                    <th colspan="3">
+                        <h3>Administração, Departamentos, Unidades Acadêmicas Especializadas e Unidades Suplmentares</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Chefia</h4>
+                    </th>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Vice</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Direção do Centro</td>
+                    <td>Maria das Graças Soares Rodrigues</td>
+                    <td>Josenildo Soares Bezerra</td>
+                </tr>
+                <tr>
+                    <td>Antropologia</td>
+                    <td>Julie Antoniette Cavignac</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Artes</td>
+                    <td>Adriano Moraes de Oliveira</td>
+                    <td> André Carrico</td>
+                </tr>
+                <tr>
+                    <td>Ciências Sociais</td>
+                    <td>Cimone Rozendo de Souza</td>
+                    <td>Irene Alves de Paiva</td>
+                </tr>
+                <tr>
+                    <td>Comunicação Social</td>
+                    <td>Janaíne Sibelle Freires Aires</td>
+                    <td>Mônica Mourão Pereira</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>Marcos Alberto Andruchak</td>
+                    <td>Dino Lincoln Figueroa Santos</td>
+                </tr>
+                <tr>
+                    <td>Filosofia</td>
+                    <td>Bruno Rafaelo Lopes Vaz</td>
+                    <td>Antônio Basílio Novaes Thomaz de Menezes</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>Eugênia Maria Dantas</td>
+                    <td>Hugo Arruda de Morais</td>
+                </tr>
+                <tr>
+                    <td>História</td>
+                    <td>Maria da Conceição Fraga</td>
+                    <td>Sebastião Leal Ferreira Vargas Netto</td>
+                </tr>
+                <tr>
+                    <td>Instituto Ágora</td>
+                    <td>Marcelo da Silva Amorim</td>
+                    <td>Izabel Souza do Nascimento</td>
+                </tr>
+                <tr>
+                    <td>Instituto de Políticas Públicas</td>
+                    <td>Lindijane de Souza Bento Almeida</td>
+                    <td>Alexsandro Ferreira Cardoso da Silva</td>
+                </tr>
+                <tr>
+                    <td>Letras</td>
+                    <td>Francisco Fábio Vieira Marcolino</td>
+                    <td>Clebson Luiz de Brito</td>
+                </tr>
+                <tr>
+                    <td>Línguas e Literaturas Estrangeiras Modernas</td>
+                    <td>Francisco Ernesto Zaragoza Zaldivar</td>
+                    <td>Rosanne Bezerra de Araújo</td>
+                </tr>
+                <tr>
+                    <td>Psicologia</td>
+                    <td>Izabel Augusta Hazin Pires</td>
+                    <td>Pedro Fernando Bendassolli</td>
+                </tr>
+                <tr>
+                    <td>Serviço de Psicologia Aplicada - SEPA</td>
+                    <td>Mário Francis Petry Londero</td>
+                    <td>Ediana Rossely de Oliveira Gomes</td>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <h3>Graduação</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Coordenações</h4>
+                    </th>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Vice</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Artes Visuais – Bacharelado</td>
+                    <td>Regina Helena Pereira Johas</td>
+                    <td>Fabíola Cristina Alves</td>
+                </tr>
+                <tr>
+                    <td>Ciências Sociais – Bacharelado</td>
+                    <td>César Sanson</td>
+                    <td>Francisca de Souza Miller</td>
+                </tr>
+                <tr>
+                    <td>Ciências Sociais – Licenciatura</td>
+                    <td>Gilmar Santana</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Comunicação Social- Publicidade e Propaganda</td>
+                    <td>Marcela Costa da Cunha Chacel</td>
+                    <td>Breno da Silva Carvalho</td>
+                </tr>
+                <tr>
+                    <td>Comunicação Social – Radialismo – Audiovisual</td>
+                    <td>Rodrigo Almeida Ferreira</td>
+                    <td>Raimunda Aline Lucena Gomes</td>
+                </tr>
+                <tr>
+                    <td>Comunicação Social – Jornalismo</td>
+                    <td>Francisco de Assis Duarte Guimarães</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dança</td>
+                    <td>Marcos Bragato</td>
+                    <td>Larissa Kelly de Oliveira Marques</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>Elizabeth Romani</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Filosofia – Bacharelado</td>
+                    <td>Samir Bezerra Gorsky</td>
+                    <td>Fernanda Machado Bulhões</td>
+                </tr>
+                <tr>
+                    <td>Filosofia – Licenciatura</td>
+                    <td>Sérgio Eduardo Lima da Silva</td>
+                    <td>Daniel Durante Pereira Alves</td>
+                </tr>
+                <tr>
+                    <td>Geografia – Bacharelado</td>
+                    <td>Sílvio Braz de Sousa</td>
+                    <td>Jane Roberta de Assis Barbosa</td>
+                </tr>
+                <tr>
+                    <td>Geografia – Licenciatura</td>
+                    <td>Orgival Bezerra da Nóbrega Júnior</td>
+                    <td>Paulo César de Araújo</td>
+                </tr>
+                <tr>
+                    <td>Geografia a Distância</td>
+                    <td>Juliana Felipe Farias</td>
+                    <td>Adriano Lima Troleis</td>
+                </tr>
+                <tr>
+                    <td>História – Bacharelado</td>
+                    <td>Susana Isabel Marcelino Guerra Domingos</td>
+                    <td>Maria Emília Monteiro Porto</td>
+                </tr>
+                <tr>
+                    <td>História – Licenciatura</td>
+                    <td>Raimundo Nonato Araújo da Rocha</td>
+                    <td>Francisca Aurinete Girão Barreto da Silva</td>
+                </tr>
+                <tr>
+                    <td>História a Distância</td>
+                    <td>Lígio José de Oliveira Maia</td>
+                    <td>Juliana Teixeira Souza</td>
+                </tr>
+                <tr>
+                    <td>Letras – Língua Portuguesa</td>
+                    <td>Nélson Ferreira de Sousa Júnior</td>
+                    <td>Patrícia Ferreira Botelho</td>
+                </tr>
+                <tr>
+                    <td>Letras – Libras</td>
+                    <td>Jéssica do Carmo Alves de Andrade</td>
+                    <td>Daniele Caroline Gonçalves Lima</td>
+                </tr>
+                <tr>
+                    <td>Letras – Língua Espanhola</td>
+                    <td>Adriana Marcelle de Andrade Freitas</td>
+                    <td>Thayane Silva Campos</td>
+                </tr>
+                <tr>
+                    <td>Letras – Inglês</td>
+                    <td>Luis Alfredo Fernandes de Assis</td>
+                    <td>Rosanne Bezerra de Araújo</td>
+                </tr>
+                <tr>
+                    <td>Letras – Francês</td>
+                    <td>Kátia Aily Franco de Camargo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Letras a Distância</td>
+                    <td>Sulemi Fabiano Campos</td>
+                    <td>Ana Virgínia Lima da Silva Rocha</td>
+                </tr>
+                <tr>
+                    <td>Psicologia</td>
+                    <td>Ana Carolina Rios Simoni</td>
+                    <td>Marlos Alves Bezerra</td>
+                </tr>
+                <tr>
+                    <td>Teatro</td>
+                    <td>José Sávio Oliveira de Araújo</td>
+                    <td>Elisa Martins Belém Vieira</td>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <h3>Pós-Graduação</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Coordenações</h4>
+                    </th>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Vice</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>em Antropologia Social</td>
+                    <td>Paulo Victor Leite Lopes</td>
+                    <td>Rozeli Maria Porto</td>
+                </tr>
+                <tr>
+                    <td>em Artes Cênicas</td>
+                    <td>Leônidas de Oliveira Neto</td>
+                    <td>Marcílio de Souza Vieira</td>
+                </tr>
+                <tr>
+                    <td>em Ciências Sociais</td>
+                    <td>Orivaldo Pimentel Lopes Júnior</td>
+                    <td>José Antônio Spineli Lindozo</td>
+                </tr>
+                <tr>
+                    <td>em Design</td>
+                    <td>José Guilherme da Silva Santa Rosa</td>
+                    <td>André Luis Santos de Pinho</td>
+                </tr>
+                <tr>
+                    <td>em Estudos da Linguagem</td>
+                    <td>Rosanne Bezerra de Araújo</td>
+                    <td>Nedja Lima de Lucena</td>
+                </tr>
+                <tr>
+                    <td>em Estudos da Mídia</td>
+                    <td>Kênia Beatriz Ferreira Maia</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> em Filosofia</td>
+                    <td>Dax Fonseca Moraes Paes Nascimento</td>
+                    <td>Vincenzo Ciccarelli</td>
+                </tr>
+                <tr>
+                    <td>em Geografia</td>
+                    <td>Rodrigo de Freitas Amorim</td>
+                    <td>Maria Helena Braga e Vaz da Costa</td>
+                </tr>
+                <tr>
+                    <td>em História</td>
+                    <td>Henrique Alonso de Albuquerque Rodrigues Pereira (pro tempore)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>em Psicologia</td>
+                    <td>Izabel Maria Farias Fernandes de Oliveira</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PROFARTES</td>
+                    <td>Arlete dos Santos Petry</td>
+                    <td>Marcos Alberto Andruchak</td>
+                </tr>
+                <tr>
+                    <td>GEOPROF</td>
+                    <td>Pablo Sebastian Moreira Fernandez</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PROFHISTÓRIA</td>
+                    <td>Roberto Airon Silva</td>
+                    <td>Lígio José de Oliveira Maia</td>
+                </tr>
+                <tr>
+                    <td>PROFLETRAS</td>
+                    <td>Glícia Marili Azevedo de Medeiros Tinoco</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>MPGPI</td>
+                    <td>Patrícia Borba Vilar Guimarães</td>
+                    <td>Sérgio Luis Rizzo Dela-Sávia</td>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <h3>Representantes dos Servidores Docentes</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Suplente</h4>
+                    </th>
+                    <th>
+                        <h4>Designação/Mandato</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <h3>Representantes do Servidores Técnico-Administrativos</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Suplente</h4>
+                    </th>
+                    <th>
+                        <h4>Designação/Mandato</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <h3>Representantes do Corpo Discente</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Suplente</h4>
+                    </th>
+                    <th>
+                        <h4>Designação/Mandato</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>José Alexandre de Lima Neto (Ciências Sociais)</td>
+                    <td>Mikaelle Thaisa da Costa (Ciências Sociais)</td>
+                    <td>Portaria nº 276/2021 – ADM/CCHLA, de 17 de dezembro de 2021, publicada no Boletim de Serviço nº 237/2021, 18 de dezembro 2021.</td>
+                </tr>
+                <tr>
+                    <td>Manoel Tibúrcio de Lucena Neto (Gestão de Políticas Públicas)</td>
+                    <td>Elton Cavalcante Barbosa (Ciências Sociais)</td>
+                    <td>Portaria nº 276/2021 – ADM/CCHLA, de 17 de dezembro de 2021, publicada no Boletim de Serviço nº 237/2021, 18 de dezembro 2021.</td>
+                </tr>
+                <tr>
+                    <td>Olívia Maria de Almeida (PPgPSI)</td>
+                    <td>Rebeca Marota da Silva (PPEUR)</td>
+                    <td>Portaria nº 276/2021 – ADM/CCHLA, de 17 de dezembro de 2021, publicada no Boletim de Serviço nº 237/2021, 18 de dezembro 2021.</td>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <h3>Representantes do CCHLA no CONSEPE</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Titular</h4>
+                    </th>
+                    <th>
+                        <h4>Suplente</h4>
+                    </th>
+                    <th>
+                        <h4>Designação/Mandato</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Lilian Carla Muneiro</td>
+                    <td>Regina Helena Pereira Johas</td>
+                    <td>Resolução nº 277/2021-CONSEPE, de 14 de dezembro de 2021.</td>
+                </tr>
+        </table>
+        <br>
+        <br>
+        </main>
+
+    
+    <section class="location">
+
+      <div class="title">
+        <img class="dot" src="./img/Favicon-CCHLA.png" alt="">
+        <h3>Localização</h3>
+      </div>
+      <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.112149763295!2d-35.19994623523283!3d-5.839813345768657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffe026418e1d%3A0x92519e8aac58661b!2sCCHLA%2FUFRN%20-%20Centro%20de%20Ci%C3%AAncias%20Humanas%2C%20Letras%20e%20Artes!5e0!3m2!1spt-BR!2sbr!4v1663724166311!5m2!1spt-BR!2sbr" 
+               width="100%" height="300" style="border:0;" 
+               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <br>
+      <section class="address_and_contact">
+          <div class="address_and_contact_item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                  Av. Senenador Salgado Filho, nº 3000 - CEP 59078-970, Lagoa Nova, <br> 
+                  Universidade Federal do Rio Grande do Norte,<br> 
+                  Campus Universitário Central, <br> 
+                  Centro de Ciências Humanas Letras e Artes,<br>
+                  Natal - Rio Grande do Norte - Brasil.
+              </p>
+          </div>
+          <div>
+              <p>
+                <i class="fas fa-phone-alt"></i> +55 (84) 3342-2243 / + 55 (84) 99193-6154 <i class="fab fa-whatsapp"></i>
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i> secretariacchla@gmail.com
+              </p>
+              <p>
+                <i class="fas fa-book"></i> <a class="links" href="#">Acesse a lista completa de contatos</a> 
+              </p>
+          </div>
+      </section>
+    </section>
+  </main>
+  <section class="container-menu-footer">
+    <ul class="menu-footer">
+    <li>
+      <a href="#">Sobre o CCHLA</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Histórico</a></li>
+        <li><a href="#">Organograma</a></li>
+        <li><a href="#">Localização</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Ensino</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Graduação</a></li>
+        <li><a href="#">Pós-Graduação</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Documentos</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Regimento Interno</a></li>
+        <li><a href="#">Prestação de Contas</a></li>
+        <li><a href="#">Plano Quadrienal</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Links</a>
+      <ul class="submenu-footer">
+        <li><a href="#">SIGAA</a></li>
+        <li><a href="#">SIPAC</a></li>
+        <li><a href="#">SIGRH</a></li>
+        <li><a href="#">MEMO</a></li>
+        <li><a href="#">POLARE</a></li>
+        <li><a href="#">UFRN</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Unidades</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Departamentos</a></li>
+        <li><a href="#">Unidades Acadêmicas Especializadas</a></li>
+        <li><a href="#">Unidades Suplementares</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Pesquisa</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Grupos de Pesquisa</a></li>
+        <li><a href="#">Laboratórios</a></li>
+        <li><a href="#">Núcleos Interdisciplinares</a></li>
+        <li><a href="#">Projetos</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Normas</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Biblioteca</a></li>
+        <li><a href="#">Centros Acadêmicos</a></li>
+        <li><a href="#">Fixação de Placas</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Contatos</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">CONSEC</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Composição</a></li>
+        <li><a href="#">Resoluções</a></li>
+        <li><a href="#">Pautas e Atas</a></li>
+        <li><a href="#">Representantes</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Extensão</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Ações de Extensão</a></li>
+        <li><a href="#">Cursos e Eventos</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Reservas</a>
+      <ul class="submenu-footer">
+        <li><a href="#">Auditórios do CCHLA</a></li>
+        <li><a href="#">Espaços Físicos do Setor de Aulas II</a></li>
+        <li><a href="#">Veículos do CCHLA</a></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+  <footer>
+    <p>©2023 CCHLA · Centro de Ciências Humanas, Letras e Artes · Todos os direitos reservados</p>
+  </footer>
+   <button id="scrollButton" onclick="scrollToTop()"></button>
+
+</body>
+</html>
