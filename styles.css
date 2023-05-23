@@ -928,3 +928,61 @@ th{
   }
 }
 
+/*Acessibilidade*/
+
+#contrastButton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(to right, darkblue 0%, darkblue 50%, #ffffff 50%, #ffffff 100%);
+  border: none;
+  cursor: pointer;
+}
+
+#contrastButton:hover::after {
+  content: "Alterar para o modo de alto contraste";
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: inline-block; /* Alterado para inline-block */
+  width: auto; /* Largura automática */
+  text-align: center; /* Alinhamento centralizado */
+  white-space: nowrap; /* Evita quebra de linha */
+}
+
+#contrastButton:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Definir cores para alto contraste */
+body.contrast {
+  background-color: black;
+  color: white;
+}
+
+/* Definir cores dos links para alto contraste */
+body.contrast a {
+  color: yellow;
+}
+
+/* Definir cores dos botões para alto contraste */
+body.contrast button {
+  background-color: yellow;
+  color: black;
+}
+
+/* Definir cores dos campos de entrada para alto contraste */
+body.contrast input {
+  background-color: yellow;
+  color: black;
+}
+

@@ -26,3 +26,9 @@ window.onscroll = function() {
         alert("Texto não encontrado.");
       }
     }
+
+  // Função para alternar o modo de alto contraste
+function toggleContrast() {
+  var body = document.querySelector('body');
+  body.classList.toggle('contrast');
+}
