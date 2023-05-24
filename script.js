@@ -44,3 +44,37 @@ function toggleContrast() {
   var body = document.querySelector('body');
   body.classList.toggle('contrast');
 }
+
+// Fixar o Menu ao Rolar a Página
+
+window.addEventListener('scroll', function() {
+  var menu = document.querySelector('.main-menu');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var offset = menu.offsetTop;
+  var windowHeight = window.innerHeight;
+  var bodyHeight = document.body.offsetHeight;
+
+  if (scrollTop > offset && scrollTop + windowHeight < bodyHeight) {
+    menu.classList.add('fixed-menu');
+    document.body.style.paddingTop = menu.offsetHeight + 'px';
+  } else {
+    menu.classList.remove('fixed-menu');
+    document.body.style.paddingTop = 0;
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -288,6 +288,15 @@ header {
   background-color: darkblue;
 }
 
+/*Menu Fixo ao Rolar a Página*/
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+
 
 /* Estilos do menu principal */
 .main-menu {
@@ -628,55 +637,7 @@ main section {
     
   }
 
-/*.highlight {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
 
-.highlight h2 {
-  margin-right: 20px;
-}*/
-
-/*.news {
-  margin-bottom: 20px;
-}
-
-.news img {
-  width: 300px;
-  height: auto;
-}
-
-.recent-news {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.recent-news .news {
-  flex-basis: 30%;
-  margin-right: 20px;
-}*/
-
-/*.events {
-  margin-top: 20px;
-}
-
-.events h2 {
-  margin-bottom: 10px;
-}
-
-.events .event {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.events .event img {
-  width: 100px;
-  height: auto;
-  margin-right: 10px;
-}*/
 
 .about-cchla{
   padding: 20px;
@@ -727,9 +688,6 @@ main section {
 .video-title {
   margin-top: 10px;
   flex-wrap: wrap;
-  /*white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;*/
   max-width: 100%;
   font-size: smaller;
 }
@@ -739,13 +697,11 @@ main section {
 }
 
 .small-video {
-  /*display: flex;*/
   align-items: center;
   margin-bottom: 20px;
 }
 
 .small-video iframe {
-  /*width: 50%;*/
   height: auto;
   margin-right: 10px;
 }
@@ -772,12 +728,6 @@ main section {
   height: 10px;
   margin-right: 5px;
 }
-
-/*.location img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}*/
 
 .address_and_contact{
   display: flex;
@@ -852,6 +802,16 @@ footer {
   padding: 10px 0;
 }
 
+
+/*Voltar para Página Inicial*/
+.comeback {
+  color: darkblue;
+}
+
+.comeback:hover{
+  color:#0d47a1;
+}
+
 /*Botão*/
 
 #scrollButton {
@@ -859,13 +819,19 @@ footer {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #1a237e;
+      background-color: #041436;
+      border: 1px solid white;
       color: #ffffff;
       border: none;
       border-radius: 50%;
       width: 50px;
       height: 50px;
       cursor: pointer;
+    }
+
+    #scrollButton:hover{
+      background-color:#0d47a1;
+      border: 1px solid black;
     }
 
     #scrollButton:before {
@@ -897,10 +863,19 @@ th{
 
 /*Responsividade*/
 
+/*@media screen and (width: 412px) and (height: 914px) {
+  /* Estilos aplicados quando a largura da tela for de 412 pixels e a altura for de 914 pixels */
+/*.social-media{
+  display: none;
+}
+}*/
+
+
+
 /* Estilos para telas menores */
-@media screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
   /* Ajuste do menu principal */
-  .main-menu {
+ /* .main-menu {
     flex-direction: column;
   }
 
@@ -917,13 +892,13 @@ th{
   }
 
   /* Ajuste do banner */
-  .banner img {
+  /*.banner img {
     width: 100%;
     height: auto;
   }
 
   /* Ajuste das seções de notícias */
-  .news {
+  /*.news {
     flex-direction: column;
   }
 
@@ -931,7 +906,7 @@ th{
     margin-bottom: 20px;
   }
 
-  .news-highlight img {
+  .news-highlight svg {
     width: 100%;
     height: auto;
   }
@@ -947,9 +922,9 @@ th{
 }
 
 /* Estilos para telas maiores */
-@media screen and (min-width: 769px) {
+/*@media only screen and (min-width: 769px) {
   /* Ajuste do menu principal */
-  .main-menu {
+  /*.main-menu {
     flex-direction: row;
   }
 
@@ -966,13 +941,13 @@ th{
   }
 
   /* Ajuste do banner */
-  .banner img {
+  /*.banner svg {
     width: 100%;
     height: auto;
   }
 
   /* Ajuste das seções de notícias */
-  .news {
+  /*.news {
     flex-direction: row;
   }
 
@@ -993,7 +968,7 @@ th{
     width: 200px;
     height: auto;
   }
-}
+}*/
 
 /*Acessibilidade*/
 

@@ -86,6 +86,9 @@
               </li>
             </ul>
           </li>
+          <li>
+            <button id="contrastButton" onclick="toggleContrast()"></button>
+          </li>
         </ul>
       </div>
     </div>
@@ -102,9 +105,31 @@
       <li>
         <a href="#">Institucional</a>
         <ul class="submenu">
-          <li><a href="#">Administração</a></li>
           <li>
-            <a href="#">CONSEC <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#">Administração <i class="fa-solid fa-chevron-right"></i></a>
+              <ul class="sub-submenu">
+                <li><a href="#">Direção</a></li>
+                <li><a href="#">Vice-Direção</a></li>
+                <li>
+                  <a href="#">Assessorias <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="sub-sub-submenu">
+                      <li><a href="#">Assessoria Acadêmica</a></li>
+                      <li><a href="#">Assessoria Administrativa</a></li>
+                      <li><a href="#">Assessoria de Comunicação</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Secretaria Administrativa</a></li>
+                <li><a href="#">SEO - Setor de Execução Orçamentária</a></li>
+                <li><a href="#">Almoxarifado Setorial</a></li>
+                <li><a href="#">Biblioteca Setorial</a></li>
+                <li><a href="#">Gerência de Redes</a></li>
+                <li><a href="#">SAT - Supervisão Acadêmica do Setor de Aulas II</a></li>
+                <li><a href="#">Revisão e Diagramação</a></li>
+                <li><a href="#">Portaria</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">Consec <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="sub-submenu">
                   <li><a href="#">Composição</a></li>
                   <li><a href="#">Resoluções</a></li>
@@ -194,10 +219,18 @@
       <li><a href="#">Contatos</a></li>
     </ul>
     <div class="search-box">
-      <a href="#" onclick="performSearch()">
+      <a href="#" onclick="openSearchPopup()">
         <i class="fas fa-search"></i>
         <span class="search-text">Pesquisar</span>
       </a>
+    </div>
+    <div id="searchPopup" class="search-popup">
+      <span class="close-button" onclick="closeSearchPopup()">&times;</span>
+      <h2 id="title-search">O que você deseja pesquisar?</h2>
+      <div class="search-box">
+        <input id="search" type="text" placeholder="Digite sua busca aqui..."> 
+        <button id="search-button" class="search-button">Buscar</button>
+      </div>
     </div> 
   </nav>
   
@@ -205,6 +238,13 @@
     <section class="banner">
       <img src="./img/barrasite2016.png" alt="Banner">
     </section>
+    <div>
+      <a class="comeback" href="./index.html"><i class="fa-solid fa-house-chimney"></i></a>
+      /
+      <span>Consec</span>
+      /
+      <span>Composição</span>
+    </div>
         <div class="titlec">
             <img class="dot" src="./img/Favicon-CCHLA.png" alt="">
             <h2>Composição do CONSEC</h2>
