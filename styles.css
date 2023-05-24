@@ -98,6 +98,7 @@ header {
 .social-media a {
   margin-right: 10px;
   color:rgb(255, 255, 255, 0.6);
+
 }
 
 .social-media a:hover {
@@ -902,12 +903,11 @@ th{
 
 /*Responsividade*/
 
-/*@media screen and (width: 412px) and (height: 914px) {
-  /* Estilos aplicados quando a largura da tela for de 412 pixels e a altura for de 914 pixels */
-/*.social-media{
-  display: none;
+@media only screen and (max-width: 412px) {
+  .social-media a {
+    display: none;
+  }
 }
-}*/
 
 
 
