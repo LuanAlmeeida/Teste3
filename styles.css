@@ -903,8 +903,8 @@ th{
 
 /*Responsividade*/
 
-@media only screen and (max-width: 412px) {
-  .social-media a {
+@media screen and (max-width: 500px) {
+  .social-media{
     display: none;
   }
 }
