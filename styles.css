@@ -534,6 +534,11 @@ main section {
   text-align: center;
   margin: 10px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
 }
 
 .sphere {
@@ -559,8 +564,8 @@ main section {
 }
 
 .sphere-label {
-  margin-top: 10px;
-  margin-right: 40px;
+  /*margin-top: 10px;
+  margin-right: 40px;*/
   font-weight: bold;
   font-size: larger;
   text-transform: uppercase;
@@ -582,20 +587,24 @@ main section {
 }
 
 .events {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  
-  
-  
+  justify-content: space-evenly;*/
+  width: 40%;
+   
+}
+
+.editais-selecoes{
+  width: 60%;
 }
 
 .event{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 10px;
-  margin-left: 20px;
+  /*justify-content: space-evenly;
+  gap: 1px;
+  margin-left: 20px;*/
+  height: 100%;
  
   
 }
@@ -607,8 +616,13 @@ main section {
   padding: 10px; /* espaçamento interno para separar o conteúdo da borda */
   text-align: center; /* centralizar o conteúdo horizontalmente */
   margin-bottom: 10px; /* espaçamento inferior para separar os eventos */ 
-  max-width:min-content;
+  
+     
+}
 
+ .event-item img {
+  width: 200px; /* Largura desejada */
+  height: 150px; /* Altura desejada */
 }
 
   .edital-list {
@@ -627,8 +641,12 @@ main section {
     border-bottom: 2px solid blue;
     border-radius: 10px;
     padding: 30px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
   }
   
   .edital-date {
@@ -643,15 +661,30 @@ main section {
   padding: 20px;
 }
 
-.about-cchla1 img {
+/*.about-cchla1 img {
   width: 70vh;
   height: 50vh;
   margin-bottom: 10px;
+}*/
+
+.about-cchla1 > div:first-child {
+  width: 40%; /* Definir a largura da div com a imagem */
+  height: 100%;
+}
+
+.about-cchla1 > div:last-child {
+  width: 60%; /* Definir a largura da div com o texto */
 }
 
 .about-cchla1 {
   display: flex;
-  gap: 5vh;
+  gap:20px;
+}
+
+.about-cchla1 > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para garantir que a imagem ocupe todo o espaço e mantenha a proporção */
 }
 
 .about-cchla-text {
@@ -682,7 +715,7 @@ main section {
 
 .main-video iframe {
   width: 100%;
-  height: 400px;
+  height: 80%;
 }
 
 .video-title {
@@ -702,14 +735,20 @@ main section {
 }
 
 .small-video iframe {
-  height: auto;
-  margin-right: 10px;
+   width: 100%;
+  height: 80%;
+  
 }
 
 .small-video .video-title {
   margin-top: 0;
   flex: 1;
 }
+
+
+
+
+
 
 
 
@@ -971,6 +1010,10 @@ th{
 }*/
 
 /*Acessibilidade*/
+  #contrastItem {
+    display: flex;
+    align-items: center;
+  }
 
 #contrastButton {
   width: 20px;
@@ -979,6 +1022,7 @@ th{
   background: linear-gradient(to right, darkblue 0%, darkblue 50%, #ffffff 50%, #ffffff 100%);
   border: none;
   cursor: pointer;
+  
 }
 
 #contrastButton:hover::after {
