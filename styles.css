@@ -88,6 +88,23 @@ header {
   padding: 10px 0;
 }
 
+.navbar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: #fff;
+}
+
+
 .top-menu {
   display: flex;
   justify-content: space-around;
@@ -326,12 +343,14 @@ header {
 .menu li {
   position: relative;
   margin-right: 20px;
+  padding: 10px;
   
 }
 
 .menu a {
   color: #ffffff;
   text-decoration: none;
+  
 }
 
 .menu a:hover {
@@ -343,7 +362,6 @@ header {
   display: none;
   position: absolute;
   background-color: #1976d2;
-  /*background-color: transparent;*/
   padding: 10px;
   top: 100%;
   left: 0;
@@ -457,6 +475,7 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
+
 
 
 /* Estilos do conteúdo principal */
@@ -903,9 +922,100 @@ th{
 
 /*Responsividade*/
 
-@media screen and (max-width: 500px) {
-  .social-media{
+@media screen and (max-width: 960px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
     display: none;
+  }
+
+  .navbar-menu.show {
+    display: block;
+  }
+
+  .top-menu{
+    flex-direction: column;
+  }
+  
+  .top-menu-text.navbar-menu {
+    flex-direction: column;
+  }
+
+  .top-submenu-text {
+    display: block;
+    position: static;
+    background-color: #0d47a1;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1;
+  }
+  
+  .top-menu-text.navbar-menu li:hover .top-submenu-text {
+    display: block;
+  }
+  
+  .top-menu-text.navbar-menu li:focus-within .top-submenu-text {
+    display: block;
+  }
+
+.submenu,
+  .sub-submenu,
+  .sub-sub-submenu {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .submenu {
+    top: auto;
+    left: auto;
+    margin-top: 10px;
+  }
+  
+  .sub-submenu {
+    margin-left: 10px;
+  }
+  
+  .sub-sub-submenu {
+    margin-left: 20px;
+  }
+  
+  .menu li:hover .submenu,
+  .submenu li:hover .sub-submenu,
+  .sub-submenu li:hover .sub-sub-submenu {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    max-height: none;
+    overflow: visible;
+  }
+
+
+  #contrastButton {
+    display: none;
+  }
+
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .search-box {
+    margin-top: 20px;
   }
 }
 

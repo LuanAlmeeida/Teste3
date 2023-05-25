@@ -48,21 +48,89 @@ function toggleContrast() {
 // Fixar o Menu ao Rolar a Página
 
 window.addEventListener('scroll', function() {
-  var menu = document.querySelector('.main-menu');
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var offset = menu.offsetTop;
-  var windowHeight = window.innerHeight;
-  var bodyHeight = document.body.offsetHeight;
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+  // Verificar se a largura da tela é maior que 960px
+  if (screenWidth >= 960) {
+    var menu = document.querySelector('.main-menu');
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var offset = menu.offsetTop;
+    var windowHeight = window.innerHeight;
+    var bodyHeight = document.body.offsetHeight;
 
-  if (scrollTop > offset && scrollTop + windowHeight < bodyHeight) {
-    menu.classList.add('fixed-menu');
-    document.body.style.paddingTop = menu.offsetHeight + 'px';
-  } else {
-    menu.classList.remove('fixed-menu');
-    document.body.style.paddingTop = 0;
+    if (scrollTop > offset && scrollTop + windowHeight < bodyHeight) {
+      menu.classList.add('fixed-menu');
+      document.body.style.paddingTop = menu.offsetHeight + 'px';
+    } else {
+      menu.classList.remove('fixed-menu');
+      document.body.style.paddingTop = 0;
+    }
   }
 });
 
+
+//Menu Principal em Telas Pequenas
+
+
+
+
+// Menu Sanduíche
+
+function toggleMenu() {
+  var navbarMenu = document.getElementById('navbarMenu');
+  navbarMenu.classList.toggle('show');
+}
+
+
+// Mudar o Tamanho dos Ícones das Redes Sociais
+
+function updateIconClasses() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Facebook Icon
+  var instagramIcon = document.getElementById('facebookIcon');
+  if (screenWidth <= 960) {
+    instagramIcon.classList.remove('fa-2x');
+    instagramIcon.classList.add('fa-x');
+  } else {
+    instagramIcon.classList.remove('fa-x');
+    instagramIcon.classList.add('fa-2x');
+  }
+
+  // Instagram Icon
+  var instagramIcon = document.getElementById('instagramIcon');
+  if (screenWidth <= 960) {
+    instagramIcon.classList.remove('fa-2x');
+    instagramIcon.classList.add('fa-x');
+  } else {
+    instagramIcon.classList.remove('fa-x');
+    instagramIcon.classList.add('fa-2x');
+  }
+
+  // Twitter Icon
+  var twitterIcon = document.getElementById('twitterIcon');
+  if (screenWidth <= 960) {
+    twitterIcon.classList.remove('fa-2x');
+    twitterIcon.classList.add('fa-x');
+  } else {
+    twitterIcon.classList.remove('fa-x');
+    twitterIcon.classList.add('fa-2x');
+  }
+
+  // Youtube Icon
+  var youtubeIcon = document.getElementById('youtubeIcon');
+  if (screenWidth <= 960) {
+    youtubeIcon.classList.remove('fa-2x');
+    youtubeIcon.classList.add('fa-x');
+  } else {
+    youtubeIcon.classList.remove('fa-x');
+    youtubeIcon.classList.add('fa-2x');
+  }
+}
+
+// Chamar a função quando a página carregar e quando a janela for redimensionada
+window.addEventListener('load', updateIconClasses);
+window.addEventListener('resize', updateIconClasses);
 
 
 
