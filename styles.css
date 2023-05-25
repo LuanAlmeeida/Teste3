@@ -504,10 +504,14 @@ main section {
   margin-bottom: 60px;
 }
 
-
-.banner svg {
-  width: 100%;
-  height: auto;
+.banner{
+  aspect-ratio: 4/1;
+  display:flex;
+  justify-content: center;
+}
+.banner img {
+  /*width: 100%;
+  height: auto;*/
 }
 
 .title {
@@ -781,15 +785,6 @@ main section {
   flex: 1;
 }
 
-
-
-
-
-
-
-
-
-
 .location{
   background-color: #f2f2f2;
 }
@@ -934,117 +929,6 @@ th{
     background-color: darkblue;
     color: white;
 }
-
-
-/*Responsividade*/
-
-@media screen and (max-width: 960px) {
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-menu {
-    display: none;
-  }
-
-  .navbar-menu.show {
-    display: block;
-  }
-
-  .top-menu{
-    flex-direction: column;
-  }
-  
-  .top-menu-text.navbar-menu {
-    flex-direction: column;
-  }
-
-  .top-submenu-text {
-    display: block;
-    position: static;
-    background-color: #0d47a1;
-    color: #ffffff;
-    padding: 10px;
-    margin-top: 5px;
-    z-index: 1;
-  }
-  
-  .top-menu-text.navbar-menu li:hover .top-submenu-text {
-    display: block;
-  }
-  
-  .top-menu-text.navbar-menu li:focus-within .top-submenu-text {
-    display: block;
-  }
-
-.submenu,
-  .sub-submenu,
-  .sub-sub-submenu {
-    display: block;
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    max-height: none;
-    overflow: visible;
-  }
-  
-  .submenu {
-    top: auto;
-    left: auto;
-    margin-top: 10px;
-  }
-  
-  .sub-submenu {
-    margin-left: 10px;
-  }
-  
-  .sub-sub-submenu {
-    margin-left: 20px;
-  }
-  
-  .menu li:hover .submenu,
-  .submenu li:hover .sub-submenu,
-  .sub-submenu li:hover .sub-sub-submenu {
-    display: block;
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    max-height: none;
-    overflow: visible;
-  }
-
-  /* Mostra o botão do menu sanduíche em telas menores que 960px */
-  .menu-toggle {
-    display: block;
-  }
-  
-  /* Oculta o menu principal em telas menores que 960px */
-  .menu {
-    display: none;
-  }
-
-  #contrastButton {
-    display: none;
-  }
-
-  .main-menu {
-    flex-direction: column;
-  }
-
-  .logo {
-    margin-bottom: 20px;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .search-box {
-    margin-top: 20px;
-  }
-}
-
-
 
 /* Estilos para telas menores */
 /*@media only screen and (max-width: 768px) {
@@ -1207,3 +1091,129 @@ body.contrast input {
   color: black;
 }
 
+/*Responsividade*/
+
+@media screen and (max-width: 960px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu.show {
+    display: block;
+  }
+
+  .top-menu{
+    flex-direction: column;
+  }
+  
+  .top-menu-text.navbar-menu {
+    flex-direction: column;
+  }
+
+  .top-submenu-text {
+    display: block;
+    position: static;
+    background-color: #0d47a1;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1;
+  }
+  
+  .top-menu-text.navbar-menu li:hover .top-submenu-text {
+    display: block;
+  }
+  
+  .top-menu-text.navbar-menu li:focus-within .top-submenu-text {
+    display: block;
+  }
+
+.submenu,
+  .sub-submenu,
+  .sub-sub-submenu {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .submenu {
+    top: auto;
+    left: auto;
+    margin-top: 10px;
+  }
+  
+  .sub-submenu {
+    margin-left: 10px;
+  }
+  
+  .sub-sub-submenu {
+    margin-left: 20px;
+  }
+  
+  .menu li:hover .submenu,
+  .submenu li:hover .sub-submenu,
+  .sub-submenu li:hover .sub-sub-submenu {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* Mostra o botão do menu sanduíche em telas menores que 960px */
+  .menu-toggle {
+    display: block;
+  }
+  
+  /* Oculta o menu principal em telas menores que 960px */
+  .menu {
+    display: none;
+  }
+
+  #contrastButton {
+    display: none;
+  }
+
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .search-box {
+    margin-top: 20px;
+  }
+
+  .news {
+    flex-direction: column;
+    
+  }
+
+  .latest-news-item{
+    flex-direction: column;
+  }
+
+  .sphere-container {
+    flex-direction: column;
+  }
+
+  .events3 {
+    flex-direction: column;
+   
+    
+  }
+}
