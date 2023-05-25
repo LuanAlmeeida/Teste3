@@ -94,7 +94,7 @@ function toggleMenu() {
 
 // Menu Sanduíche 2
 function toggleMainMenu() {
-  var navbarMenu = document.getElementById('navbarMenu2');
+  var navbarMainMenu = document.getElementById('navbarMainMenu');
   navbarMenu.classList.toggle('show');
 }
 
