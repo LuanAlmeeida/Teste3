@@ -476,6 +476,22 @@ header {
   text-decoration: none;
 }
 
+/* Estilos para o botão do menu sanduíche */
+.menu-toggle {
+  display: none; /* Oculta o botão em telas maiores */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+/* Estilos para o menu quando o botão do menu sanduíche estiver ativo */
+.menu.active {
+  display: block;
+}
+
+
 
 
 /* Estilos do conteúdo principal */
@@ -997,6 +1013,15 @@ th{
     overflow: visible;
   }
 
+  /* Mostra o botão do menu sanduíche em telas menores que 960px */
+  .menu-toggle {
+    display: block;
+  }
+  
+  /* Oculta o menu principal em telas menores que 960px */
+  .menu {
+    display: none;
+  }
 
   #contrastButton {
     display: none;

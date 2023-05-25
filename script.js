@@ -71,6 +71,16 @@ window.addEventListener('scroll', function() {
 
 //Menu Principal em Telas Pequenas
 
+// Seleciona o botão de menu e o menu principal
+var menuToggle = document.querySelector('.menu-toggle');
+var menu = document.querySelector('.menu');
+
+// Adiciona um evento de clique ao botão de menu
+menuToggle.addEventListener('click', function() {
+  // Adiciona ou remove a classe 'active' no botão de menu
+  menuToggle.classList.toggle('active');
+});
+
 
 
 
@@ -78,6 +88,13 @@ window.addEventListener('scroll', function() {
 
 function toggleMenu() {
   var navbarMenu = document.getElementById('navbarMenu');
+  navbarMenu.classList.toggle('show');
+}
+
+
+// Menu Sanduíche 2
+function toggleMainMenu() {
+  var navbarMenu = document.getElementById('navbarMenu2');
   navbarMenu.classList.toggle('show');
 }
 
