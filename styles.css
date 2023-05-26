@@ -178,6 +178,7 @@ header {
   
 }
 
+
 .top-submenu-text a {
   color: #ffffff;
   text-decoration: none;
@@ -1204,10 +1205,6 @@ body.contrast input {
   
   /* Oculta o menu principal em telas menores que 960px */
   .menu {
-    display: none;
-  }
-
-  #contrastButton {
     display: none;
   }
 
