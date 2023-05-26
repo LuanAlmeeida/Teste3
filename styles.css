@@ -74,6 +74,8 @@ body {
 }
 
 .news-highlight img{
+  aspect-ratio: 16/9;
+  object-fit:fill;
   width: 100%;
 }
 
@@ -505,11 +507,12 @@ main section {
 }
 
 .banner{
-  aspect-ratio: 4/1;
   display:flex;
   justify-content: center;
 }
 .banner img {
+  aspect-ratio: 4/1;
+  width: 100%;
   /*width: 100%;
   height: auto;*/
 }
@@ -543,6 +546,11 @@ main section {
   gap: 3vh;
   align-items: center;
   max-width: 90vh;
+}
+
+.latest-news-item img{
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 
 .image-container {
@@ -631,6 +639,7 @@ main section {
   flex-direction: column;
   justify-content: space-evenly;*/
   width: 40%;
+  background-color: #a0acee;
    
 }
 
@@ -656,11 +665,11 @@ main section {
   padding: 10px; /* espaçamento interno para separar o conteúdo da borda */
   text-align: center; /* centralizar o conteúdo horizontalmente */
   margin-bottom: 10px; /* espaçamento inferior para separar os eventos */ 
-  
-     
+  aspect-ratio: 1;     
 }
 
  .event-item img {
+  aspect-ratio: 1;
   width: 200px; /* Largura desejada */
   height: 150px; /* Altura desejada */
 }
@@ -889,7 +898,7 @@ footer {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #041436;
+      background-color: #0738a1;
       border: 1px solid white;
       color: #ffffff;
       border: none;
@@ -900,7 +909,7 @@ footer {
     }
 
     #scrollButton:hover{
-      background-color:#0d47a1;
+      background-color:#3870c5;
       border: 1px solid black;
     }
 
@@ -1094,6 +1103,10 @@ body.contrast input {
 /*Responsividade*/
 
 @media screen and (max-width: 960px) {
+  main {
+    margin: 0px;
+  }
+  
   .navbar-toggle {
     display: block;
   }
@@ -1213,8 +1226,19 @@ body.contrast input {
 
   .events3 {
     flex-direction: column;
-   
     
+  }
+
+  .events{
+    width: 100%;
+  }
+
+  .event-item{
+    margin-bottom: 20px;
+  }
+
+  .editais-selecoes{
+    width: 100%;
   }
 
   .about-cchla1{

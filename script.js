@@ -72,21 +72,21 @@ window.addEventListener('scroll', function() {
 //Menu Principal em Telas Pequenas
 
 // Seleciona o botão de menu e o menu principal
-/*var menuToggle = document.querySelector('.menu-toggle');
+var menuToggle = document.querySelector('.menu-toggle');
 var menu = document.querySelector('.menu');
 
 // Adiciona um evento de clique ao botão de menu
 menuToggle.addEventListener('click', function() {
   // Adiciona ou remove a classe 'active' no botão de menu
   menuToggle.classList.toggle('active');
-});*/
+});
 
 
 
 
 // Menu Sanduíche
 
-/*function toggleMenu() {
+function toggleMenu() {
   var navbarMenu = document.getElementById('navbarMenu');
   navbarMenu.classList.toggle('show');
 }
@@ -97,7 +97,7 @@ function toggleMainMenu() {
   var navbarMainMenu = document.getElementById('navbarMainMenu');
   navbarMenu.classList.toggle('show');
 }
-*/
+
 
 // Mudar o Tamanho dos Ícones das Redes Sociais
 
