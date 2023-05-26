@@ -369,6 +369,7 @@ header {
   left: 0;
   z-index: 1;
   font-size: smaller;
+  background-color: red;
 }
 
 .menu li:hover .submenu {
@@ -377,7 +378,14 @@ header {
 }
 
 .submenu li {
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
+  border-top: #ffffff 1px dotted;
+  list-style: none;
+}
+
+.submenu li:first-child {
+  /*margin-bottom: 5px;*/
+  border-top: #ffffff 3px solid;
   list-style: none;
 }
 
@@ -390,6 +398,7 @@ header {
 
 .sub-submenu{
   display: none;
+  
   
 }
 
@@ -425,12 +434,12 @@ header {
   position: absolute;
   top: 0;
   left: 100%;
-  transform: translateX(1px); /* Ajuste a distância horizontal conforme necessário */
+  /*transform: translateX(1px); /* Ajuste a distância horizontal conforme necessário */
 }
 
 .sub-submenu li {
   display: block; /* Exibir os itens do sub-submenu em linha */
-  margin-right:5px; /* Ajuste o espaçamento entre os itens conforme necessário */
+  /*margin-right:5px; /* Ajuste o espaçamento entre os itens conforme necessário */
 }
 
 .sub-submenu a {
