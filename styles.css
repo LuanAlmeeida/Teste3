@@ -134,7 +134,10 @@ header {
 .top-menu-text li {
   position: relative;
   list-style: none;
+  
 }
+
+
 
 .top-menu-text a {
   display: block;
@@ -152,6 +155,7 @@ header {
   position: absolute;
   background-color: #0d47a1;
   color: #ffffff;
+  
   padding: 10px;
   top: 100%;
   left: 0;
@@ -165,6 +169,12 @@ header {
 
 .top-submenu-text li {
   margin-bottom: 5px;
+  border-top: 1px dotted #ffffff;
+  
+}
+
+.top-submenu-text li:first-child {
+  border-top: 3px solid #ffffff;
   
 }
 
@@ -363,13 +373,11 @@ header {
 .submenu {
   display: none;
   position: absolute;
-  background-color: #1976d2;
-  padding: 10px;
-  top: 100%;
-  left: 0;
+  /*margin-right: 200px;*/
+  /*top: 100%;*/
+  /*left: 0;*/
   z-index: 1;
   font-size: smaller;
-  background-color: red;
 }
 
 .menu li:hover .submenu {
@@ -381,6 +389,7 @@ header {
   /*margin-bottom: 5px;*/
   border-top: #ffffff 1px dotted;
   list-style: none;
+  background-color: #1976d2;
 }
 
 .submenu li:first-child {
@@ -392,24 +401,19 @@ header {
 .submenu a {
   color: #ffffff;
   text-decoration: none;
+  
 }
 
 /*Novo*/
 
-.sub-submenu{
-  display: none;
-  
-  
-}
-
 .submenu li{
   width: 150px;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .sub-submenu a{
-  width: 150px;
-  align-items: center;
+  /*width: 150px;*/
+ /* align-items: center;*/
 }
 
 
@@ -419,25 +423,25 @@ header {
 
 .sub-submenu {
   display: none;
-  position: absolute;
-  background-color: #1976d2;
+  /*position: absolute;*/
+  /*background-color: #1976d2;*/
   /*width:max-content;*/
-  padding-left: 25px;
-  top: 0;
+  /*padding-left: 25px;*/
+  /*top: 0px;
   left: 100%;
-  z-index: 2;
-  
+  z-index: 2;*/
 }
 
 .submenu li:hover > .sub-submenu {
   display: block;
   position: absolute;
-  top: 0;
-  left: 100%;
+  top:0;
+  left: 101%;
   /*transform: translateX(1px); /* Ajuste a distância horizontal conforme necessário */
 }
 
 .sub-submenu li {
+  
   display: block; /* Exibir os itens do sub-submenu em linha */
   /*margin-right:5px; /* Ajuste o espaçamento entre os itens conforme necessário */
 }
@@ -472,7 +476,7 @@ header {
   display: block;
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 101%;
   transform: translateX(1px); /* Ajuste a distância horizontal conforme necessário */
 }
 
@@ -662,7 +666,7 @@ main section {
   /*justify-content: space-evenly;
   gap: 1px;
   margin-left: 20px;*/
-  height: 100%;
+  
  
   
 }
@@ -674,13 +678,16 @@ main section {
   padding: 10px; /* espaçamento interno para separar o conteúdo da borda */
   text-align: center; /* centralizar o conteúdo horizontalmente */
   margin-bottom: 10px; /* espaçamento inferior para separar os eventos */ 
-  aspect-ratio: 1;     
+  aspect-ratio: 1;
+  width: 400px;
+  height: 350px;
+     
 }
 
  .event-item img {
   aspect-ratio: 1;
-  width: 200px; /* Largura desejada */
-  height: 150px; /* Altura desejada */
+  /*width: 200px; /* Largura desejada */
+  /*height: 150px; /* Altura desejada */
 }
 
   .edital-list {
