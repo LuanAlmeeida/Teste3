@@ -492,6 +492,25 @@ header {
   text-decoration: none;
 }
 
+
+.sub-sub-sub-submenu{
+  display: none;
+  position: absolute;
+  background-color: #1976d2;
+  padding-left: 5px;
+  top: 0;
+  left: 150%;
+  z-index: 4;
+}
+
+.sub-sub-submenu li:hover > .sub-sub-sub-submenu{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 107%;
+  transform: translateX(1px);  
+}
+
 /* Estilos para o botão do menu sanduíche */
 .menu-toggle {
   display: none; /* Oculta o botão em telas maiores */
@@ -887,6 +906,14 @@ main section {
 .submenu-footer li{
   margin-bottom: 10px;
   
+  
+}
+
+.sub-submenu-footer {
+  list-style-type: none;
+  font-size: smaller;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 
