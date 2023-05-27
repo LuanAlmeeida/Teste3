@@ -501,6 +501,7 @@ header {
   top: 0;
   left: 150%;
   z-index: 4;
+  width: 150px;
 }
 
 .sub-sub-submenu li:hover > .sub-sub-sub-submenu{
@@ -510,6 +511,8 @@ header {
   left: 107%;
   transform: translateX(1px);  
 }
+
+
 
 /* Estilos para o botão do menu sanduíche */
 .menu-toggle {
