@@ -1288,4 +1288,9 @@ body.contrast input {
     flex-direction: column;
     align-items: center;
   }
+
+  .address_and_contact{
+    flex-direction: column;
+    align-items: center;
+  }
 }
