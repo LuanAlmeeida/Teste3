@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 /* Estilos gerais */
 body {
   font-family: "Liberation", sans-serif;
@@ -174,7 +179,7 @@ header {
 }
 
 .top-submenu-text li:first-child {
-  border-top: 3px solid #ffffff;
+  border-top: 1px solid #ffffff;
   
 }
 
@@ -222,7 +227,8 @@ header {
 .login {
   align-items: center;
   font-size: smaller;
-  max-width: 200px; 
+  max-width: 200px;
+  margin-top: 10px; 
 }
 
 .privatearea {
@@ -595,6 +601,8 @@ main section {
 }
 
 .image-container img {
+  aspect-ratio: 16/9;
+  object-fit: fill;
   width: 100%;
 }
 
@@ -630,11 +638,13 @@ main section {
   height: 200px;
   background-color: lightblue;
   border-radius: 50%;
-  border: 2px solid gray;
+  border: 3px solid gray;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
+  padding: 10px;
+  
 }
 
 .sphere:hover {
@@ -666,6 +676,8 @@ main section {
   background-color: #e0eaf5;
   gap: 20px;
   padding: 20px;
+  border-radius: 9px;
+  border: 3px solid black;
  
   
 }
@@ -674,9 +686,7 @@ main section {
   /*display: flex;
   flex-direction: column;
   justify-content: space-evenly;*/
-  width: 40%;
-  background-color: #a0acee;
-   
+  width: 40%;   
 }
 
 .editais-selecoes{
@@ -686,6 +696,8 @@ main section {
 .event{
   display: flex;
   flex-direction: column;
+  border-right: 3px dotted gray;
+  padding-right: 20px;
   /*justify-content: space-evenly;
   gap: 1px;
   margin-left: 20px;*/
@@ -700,17 +712,19 @@ main section {
   border-bottom: 2px solid blue; /* borda inferior azul */
   padding: 10px; /* espaçamento interno para separar o conteúdo da borda */
   text-align: center; /* centralizar o conteúdo horizontalmente */
-  margin-bottom: 10px; /* espaçamento inferior para separar os eventos */ 
+  margin-bottom: 10px; /* espaçamento inferior para separar os eventos */
+   
   aspect-ratio: 1;
   width: 400px;
-  height: 350px;
+  height: 300px;
      
 }
 
  .event-item img {
   aspect-ratio: 1;
-  /*width: 200px; /* Largura desejada */
-  /*height: 150px; /* Altura desejada */
+  width: 300px; /* Largura desejada */
+  height: 200px; /* Altura desejada */
+  border-radius: 3px solid black;
 }
 
   .edital-list {
@@ -741,6 +755,14 @@ main section {
     text-align: right;
     margin: 0;
     
+  }
+
+  #vermais {
+    display: flex;
+    float: right;
+    font-weight: bolder;
+    color: #1976d2;
+    text-decoration: underline;
   }
 
 
@@ -779,6 +801,37 @@ main section {
   text-align: justify;
 }
 
+.albums{
+ background-color: #e0eaf5;
+ margin: 0 20px;
+ padding: 20px;
+ justify-content: space-around;
+ border-radius: 9px;
+ border: 3px solid black;
+}
+
+.album{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+   
+}
+
+.album-item{
+    background-color: #fff;
+    border-radius: 9px;
+    border-bottom: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    aspect-ratio: 1;
+    width: 400px;
+    height: 300px;
+    max-width: fit-content;
+    width: 100%;
+    
+}
+
 .links{
   font-weight: bolder;
   color: #1976d2;
@@ -788,6 +841,8 @@ main section {
   background-color: #041436;
   padding: 20px;
   color: #fff;
+  border-radius: 9px;
+  border: 3px solid gray;
 }
 
 .videos-container {
@@ -946,9 +1001,9 @@ footer {
       bottom: 20px;
       right: 20px;
       background-color: #0738a1;
-      border: 1px solid white;
+      border: 1px solid darkgray;
       color: #ffffff;
-      border: none;
+      /*border: none;*/
       border-radius: 50%;
       width: 50px;
       height: 50px;
@@ -1263,6 +1318,13 @@ body.contrast input {
     flex-direction: column;
   }
 
+  .image-container img {
+  aspect-ratio: 16/9;
+  object-fit: fill;
+  width: 100%;
+  height: 265px;
+}
+
   .sphere-container {
     flex-direction: column;
   }
@@ -1270,14 +1332,23 @@ body.contrast input {
   .events3 {
     flex-direction: column;
     
+    
   }
 
   .events{
     width: 100%;
+    
   }
 
   .event-item{
     margin-bottom: 20px;
+    max-width: min-content;
+    overflow: hidden;
+  }
+
+  .event{
+    align-items: center;
+    border-right: none;
   }
 
   .editais-selecoes{
@@ -1288,6 +1359,17 @@ body.contrast input {
     flex-direction: column;
     align-items: center;
   }
+
+  .album{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .album-item{
+    max-width: min-content;
+    overflow: hidden;
+  }
+
 
   .address_and_contact{
     flex-direction: column;
