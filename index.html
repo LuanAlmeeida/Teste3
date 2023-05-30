@@ -12,13 +12,13 @@
   <link href="https://fonts.googleapis.com/css?family=Liberation:400,700" rel="stylesheet">
 </head>
 <body>
-  <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
-    <ul id="menu-barra-temp" style="list-style:none;">
-      <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
-          <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+  <div id="barra-brasil">
+    <ul id="menu-barra-temp">
+      <li>
+          <a href="http://brasil.gov.br">Portal do Governo Brasileiro</a>
       </li>
       <li>
-         <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+         <a href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
       </li>
     </ul>
   </div>
@@ -32,7 +32,7 @@
       </div>
       <div class="top-menu-text-and-privatearea">
               <div class="navbar">
-                  <button class="navbar-toggle" onclick="toggleMenu()">
+                  <button class="navbar-toggle" onclick="toggleMenu()" aria-label="Menu">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -102,7 +102,7 @@
       </div>
       <div class="privatearea-and-contrastbutton">
           <div id="contrastItem">
-            <button id="contrastButton" onclick="toggleContrast()"></button>
+            <button id="contrastButton" onclick="toggleContrast()" aria-label="Contraste"></button>
           </div>
       </div>
   </div>    
@@ -115,7 +115,7 @@
       <img src="./img/Logo - CCHLA.png" alt="CCHLA">
       </a>
     </div>
-    <button class="menu-toggle" onclick="toggleMainMenu()">
+    <button class="menu-toggle" onclick="toggleMainMenu()" aria-label="Menu Principal">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -563,48 +563,48 @@
                   <h3>Editais e Seleções</h3>
               </div>
                 <ul class="edital-list">
-                    <a href="">
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">10 de maio de 2023</p>
                             <h3>Programa de Bolsas de Estudo 2023: Inscrições Abertas</h3>
-                          </li>
-                      </a>    
-                      <a href="">
+                            </a>
+                          </li>                   
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">15 de abril de 2023</p>
                             <h3>Processo Seletivo para Iniciação Científica: Edital Publicado</h3>
+                            </a>
                           </li>
-                      </a>    
-                      <a href="">
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">5 de março de 2023</p>
                             <h3>Chamada para Submissão de Artigos Científicos: Conferência Internacional de Ciências Sociais</h3>
-                          </li>
-                      </a>    
-                      <a href="">
+                            </a> 
+                          </li>     
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">20 de fevereiro de 2023</p>
                             <h3>Seleção de Voluntários para Projeto de Extensão: Inscrições Prorrogadas</h3>
-                          </li>
-                      </a>
-                      <a href="">
+                            </a>
+                          </li>                     
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">10 de janeiro de 2023</p>
                             <h3>Edital de Contratação de Professores: Vagas Disponíveis</h3>
+                            </a>
                           </li>
-                      </a>
-                      <a href="">
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">10 de janeiro de 2023</p>
                             <h3>Edital de Contratação de Professores: Vagas Disponíveis</h3>
-                          </li>
-                      </a>
-                      <a href="">
+                            </a>
+                          </li>                
                           <li class="edital-item">
+                            <a href="">
                             <p class="edital-date">10 de janeiro de 2023</p>
                             <h3>Edital de Contratação de Professores: Vagas Disponíveis</h3>
+                            </a>
                           </li>
-                      </a>
                       <a href="" id="vermais">Ver mais > ></a>
                 </ul>
           </div>
@@ -704,9 +704,8 @@
         <h3>Localização</h3>
       </div>
       <div id="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.112149763295!2d-35.19994623523283!3d-5.839813345768657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffe026418e1d%3A0x92519e8aac58661b!2sCCHLA%2FUFRN%20-%20Centro%20de%20Ci%C3%AAncias%20Humanas%2C%20Letras%20e%20Artes!5e0!3m2!1spt-BR!2sbr!4v1663724166311!5m2!1spt-BR!2sbr" 
-               width="100%" height="300" style="border:0;" 
-               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe title="Mapa de Localização do CCHLA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.112149763295!2d-35.19994623523283!3d-5.839813345768657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffe026418e1d%3A0x92519e8aac58661b!2sCCHLA%2FUFRN%20-%20Centro%20de%20Ci%C3%AAncias%20Humanas%2C%20Letras%20e%20Artes!5e0!3m2!1spt-BR!2sbr!4v1663724166311!5m2!1spt-BR!2sbr" 
+               width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <br>
       <section class="address_and_contact">
@@ -842,9 +841,9 @@
   <footer>
     <p>©2023 CCHLA · Centro de Ciências Humanas, Letras e Artes · Todos os direitos reservados</p>
   </footer>
-   <button id="scrollButton" onclick="scrollToTop()"></button>
+   <button id="scrollButton" onclick="scrollToTop()" aria-label="Voltar ao Topo"></button>
 
-  <script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+  <script defer="defer" src="https://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

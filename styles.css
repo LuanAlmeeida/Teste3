@@ -17,6 +17,33 @@ body {
   color: darkblue;
 }
 
+/*Barra Brasil*/
+
+#barra-brasil{
+  background:#7F7F7F; 
+  height: 20px; 
+  padding:0 0 0 10px;
+  display:block;
+}
+
+#menu-barra-temp{
+  list-style:none;
+}
+
+#menu-barra-temp li{
+  display:inline; 
+  float:left;
+  padding-right:10px; 
+  margin-right:10px; 
+  border-right:1px solid #EDEDED
+}
+
+#menu-barra-temp a{
+  font-family:sans,sans-serif; 
+  text-decoration:none; 
+  color:white;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -894,6 +921,10 @@ main section {
 
 .location p {
   margin-bottom: 10px;
+}
+
+#map iframe{
+  border:0;
 }
 
 .dot {
