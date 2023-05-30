@@ -389,8 +389,7 @@ header {
 .menu li {
   position: relative;
   margin-right: 20px;
-  padding: 10px;
-  
+  padding: 10px;  
 }
 
 .menu a {
@@ -690,11 +689,11 @@ main section {
   font-weight: bold;
   font-size: larger;
   text-transform: uppercase;
-  color: blue;
+  color: darkblue;
 }
 
 .sphere-label:hover {
-  color: darkblue;
+  color:#3870c5;
 }
 
 
@@ -925,6 +924,16 @@ main section {
 
 #map iframe{
   border:0;
+}
+
+.Links-Texts{
+  text-decoration: none;
+  text-align: justify;
+  color: darkblue;
+}
+
+.Links-Texts:hover{
+  color:#3870c5;
 }
 
 .dot {
